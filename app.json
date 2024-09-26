@@ -1,0 +1,107 @@
+{
+  "expo": {
+    "name": "synopsis",
+    "slug": "SynopsisMobile",
+    "owner": "synopsis-ia",
+    "version": "1.1.0",
+    "scheme": "bcsy",
+    "orientation": "portrait",
+    "icon": "./assets/android-chrome-512x512.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1C1F2A"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      "./plugins/withAndroidVerifiedLinksWorkaround",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0",
+            "usesCleartextTraffic": true
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/1b7e1589-f2a5-44cd-81f7-c86057307547"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "buildNumber": "1.0.4.6",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan barcodes on event tickets.",
+        "GADIsAdManagerApp": true
+      },
+      "bundleIdentifier": "com.synopsis-ia"
+    },
+    "android": {
+      "versionCode": 1046,
+      "permissions": ["CAMERA", "RECORD_AUDIO", "INTERNET"],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "bcsy",
+              "host": "*.synopsis.io",
+              "pathPrefix": "/"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-chrome-512x512.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.wbernadoque.SynopsisMobile"
+    },
+    "web": {
+      "favicon": "./assets/android-chrome-192x192.png"
+    },
+    "packagerOpts": {
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "userInterfaceStyle": "automatic",
+    "extra": {
+      "eas": {
+        "projectId": "1b7e1589-f2a5-44cd-81f7-c86057307547"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-2897224723776887~9421243841",
+    "ios_app_id": "ca-app-pub-2897224723776887~5948407859"
+  }
+}
