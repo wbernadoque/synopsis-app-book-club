@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import '../src/assets/styles/splide-skyblue.min.css';
+@import '../src/assets/styles/animacoes.css';
+@import '../src/assets/styles/faq.css';
+@import '../src/assets/styles/lgpd.css';
+@import '../src/assets/styles/footer.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./assets/fonts/Inter/Inter-VariableFont_slnt-wght.ttf);
+}
+
+:root {
+  --main-action: #9A3A88;
+  --error: #EB5757;
+  --selection: #E0E0E0;
+  --back: #fbfbfb;
+  --secondary: #7D7D7D;
+}
+

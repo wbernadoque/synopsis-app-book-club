@@ -1,0 +1,64 @@
+{
+  "name": "synopsis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --host 0.0.0.0",
+    "build": "vue-cli-service build",
+    "build-hml": "vue-cli-service build ---mode staging",
+    "lint": "vue-cli-service lint",
+    "deploy": "aws s3 sync ./dist s3://synopsis-frontend",
+    "deploy-hml": "aws s3 sync ./dist s3://synopsis-frontend-hml --profile default"
+  },
+  "dependencies": {
+    "@egjs/vue-flicking": "^3.7.3",
+    "@splidejs/splide": "^2.4.21",
+    "@splidejs/vue-splide": "^0.3.5",
+    "@tailwindcss/postcss7-compat": "^2.2.7",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "epic-spinners": "^1.1.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mosha-vue-toastify": "^1.0.11",
+    "postcss": "^7.0.36",
+    "postcss-cli": "^8.3.1",
+    "pwa": "^1.9.7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
+    "vue": "^3.0.0",
+    "vue-cookies": "^1.7.4",
+    "vue-router": "^4.0.5",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "^4.5.12",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.1.1",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^9.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

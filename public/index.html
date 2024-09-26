@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#9b3a89" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="facebook-domain-verification"
+      content="l6vv5m3fzwosfln6boj5yy2uey6plv"
+    />
+    <meta
+      name="application-name"
+      content="Synopsis, Para ler o que vale a pena"
+    />
+    <meta
+      name="description"
+      content="Encontre indicação de livros similares no Synopsis. Encontre sua próxima leitura agora"
+    />
+    <div id="fb-root"></div>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "677756596721228");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=677756596721228&ev=PageView
+  &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CR3SX9KLLB"
+    ></script>
+    <script>
+      var host = window.location.hostname;
+      if (
+        host != "localhost" ||
+        host != "d11e0ucoaidzso.cloudfront.net" ||
+        host != "192.168.15.19"
+      ) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-CR3SX9KLLB");
+      }
+    </script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="">
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

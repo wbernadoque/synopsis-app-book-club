@@ -1,0 +1,210 @@
+/* loading */
+.ring {
+  --tw-ring-shadow: none !important;
+}
+.animation-show-right {
+  animation: 0.5s showRight;
+  transition: 0.5s;
+}
+.animation-show-up {
+  animation: 0.3s showUp;
+  transition: 0.3s;
+}
+.animation {
+  animation: show 0.5s;
+}
+.toast {
+  animation: 0.5s slidein;
+  transition: 0.5s;
+}
+#modal {
+  transition: 0.5s;
+}
+#info-book {
+  animation: 0.5s showRight;
+  transition: 0.5s;
+}
+#book-not-found {
+  animation: 0.5s showRight;
+  transition: 0.5s;
+}
+
+/* contato */
+#form-contact form {
+  animation: showRight 0.5s;
+}
+#form-contact label {
+  font-weight: 600;
+}
+#form-contact input {
+  padding: 0.625rem 1.5rem;
+  background-color: #fbfbfb;
+}
+#form-contact textarea {
+  padding: 0.625rem 1.5rem;
+  background-color: #fbfbfb;
+}
+#form-contact input:focus {
+  border: 2px solid #9a3a88;
+}
+#form-contact input[type="radio"] {
+  position: absolute;
+  left: -300vw;
+}
+#form-contact input[type="radio"] + span {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+}
+#form-contact input[type="radio"] + span::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: #e0e0e0;
+}
+#form-contact input[type="radio"]:checked + span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: white;
+  animation: animationRadio 0.1s;
+  border: 4px solid #9a3a88;
+}
+#report input[type="file"] {
+  position: absolute;
+  left: -300vw;
+}
+#report input[type="file"] + .container-file {
+  position: relative;
+  height: 50px;
+}
+#report .container-file {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  bottom: 0px;
+  border-radius: 80px;
+  background: #fbfbfb;
+
+  border: 1px solid #e0e0e0;
+}
+#report .bar {
+  position: absolute;
+  width: 75%;
+  height: 8px;
+  left: 20px;
+  bottom: 20px;
+  border-radius: 80px;
+  background: #e0e0e0;
+}
+
+#report .bar.start {
+  animation: animationLoading 2s;
+  background-color: #9a3a88;
+  width: 75%;
+}
+
+#report img.attachment {
+  position: absolute;
+  z-index: 100;
+  right: 20px;
+  top: 20px;
+}
+#independent {
+  animation: showRight 0.5s;
+}
+
+@keyframes animationLoading {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes animationRadio {
+  from {
+    border: 0px solid #9a3a88;
+  }
+  to {
+    border: 4px solid #9a3a88;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+  }
+}
+@keyframes slideUp {
+  from {
+    max-height: 200px;
+  }
+  to {
+    max-height: 0;
+  }
+}
+@keyframes rotateIn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateOut {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes showRight {
+  from {
+    transform: translate3d(-5rem, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slidein {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 8px;
+  }
+}
+@keyframes showUp {
+  from {
+    bottom: -100vh;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}

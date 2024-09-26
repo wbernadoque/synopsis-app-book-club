@@ -1,0 +1,49 @@
+/* .botao {
+  width: 32px;
+  height: 32px;
+  color: #7d7d7d;
+  cursor: pointer;
+} */
+/* .botao-ativo {
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #9a3a88;
+  cursor: initial;
+} */
+.answer span {
+  /* transition: 1.5s; */
+  display: block;
+  overflow: hidden;
+  animation: slideUp 0.5s forwards;
+}
+.answer span.active {
+  /* transition: 1.5s; */
+  animation: slideDown 0.5s forwards;
+}
+
+.title:after {
+  content: '';
+  height: 4px;
+  width: 40px;
+  background-color: #9a3a88;
+  border-radius: 3px;
+  display: block;
+}
+.less:after {
+  font-weight: 600;
+  font-size: 20px;
+  content: '-';
+  color: #9a3a88;
+  display: block;
+  animation: rotateIn 0.5s forwards;
+}
+.more:after {
+  font-weight: 600;
+  font-size: 20px;
+  content: '+';
+  color: #9a3a88;
+  display: block;
+
+  animation: rotateOut 0.5s forwards;
+}

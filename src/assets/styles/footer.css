@@ -1,0 +1,72 @@
+.button-position {
+  top: 6px;
+}
+.toasty-position {
+  top: 10px;
+}
+.text-indent {
+  text-indent: 26px;
+}
+.border-footer {
+  width: 140vw !important;
+  height: 40vh !important;
+  border-radius: 50% 50% 0 0;
+}
+.custom-toast {
+  width: calc(100% - 35px);
+  left: 50%;
+  transform: translatex(-50%);
+}
+.margin-topo {
+  margin-top: 10%;
+}
+
+.max-size {
+  max-width: 178px;
+}
+.margin-top {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.logoWidth {
+  max-width: 80px;
+}
+
+.btn-newsletter {
+  padding: 14px 40px;
+}
+
+@media (max-width: 1023px) {
+  .margin-topo {
+    width: 90vw;
+    margin-top: 15% !important;
+  }
+  .text-indent {
+    text-indent: 0;
+  }
+  .custom-toast {
+    width: calc(100% - 15px);
+    left: 50%;
+    top: 20.5%;
+    transform: translate(-50%, -50%);
+  }
+  .border-footer {
+    height: 50vh !important;
+  }
+}
+@media (max-width: 1023px) {
+  .padding-responsive-mobile {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+@media (max-width: 1023px) {
+  .custom-toast {
+    width: calc(100% - 15px);
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, -50%);
+    
+  }
+}

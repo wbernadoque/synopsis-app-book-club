@@ -1,0 +1,13 @@
+{
+    "lang": "pt",
+    "dir": "ltr",
+    "name": "Synopsis-ia",
+    "short_name": "Synopsis",
+    "icons": [
+      {
+        "src": "public/favicon.svg",
+        "sizes": "any"
+
+      }
+    ]
+  }
